@@ -1,6 +1,2 @@
-node_modules/
-/functions/
-public/_next/
-src/functions/pages
 .next
-build/
+node_modules
