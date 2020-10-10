@@ -7,7 +7,7 @@
     "dev": "next",
     "build:next": "next build",
     "build:export": "next export",
-    "build": "yarn build:next && && yarn build:export cp -a public/_next/serverless/pages src/functions/ && netlify-lambda build src/functions",
+    "build": "yarn build:next && yarn build:export cp -a public/_next/serverless/pages src/functions/ && netlify-lambda build src/functions",
     "start": "next start",
     "tslint": "tslint -p . -c tslint.json"
   },
