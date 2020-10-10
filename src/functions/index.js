@@ -1,8 +1,8 @@
-const compat = require("next-aws-lambda");
-const page = require("./pages/index");
 
-exports.handler = (event, context, callback) => {
-  console.log("[render] ", event.path)
-  event.requestContext = {}
-  compat(page)(event, context, callback)
+
+exports.handler = async (event, context) => {
+  return {
+    statusCode: 200,
+    body: JSON.stringify({event, context}),
+  }
 };

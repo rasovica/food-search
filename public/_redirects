@@ -1,2 +1,1 @@
-/ /.netlify/functions/index 200
-/posts/:post_id /.netlify/functions/post/:post_id 200
+/api/search /.netlify/functions/search 200
